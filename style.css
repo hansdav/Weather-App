@@ -5,15 +5,20 @@ body {
     height: 100vh;
     margin: 0;
     background-color: black;
-}
+    background-image: url("https://images.unsplash.com/photo-1516550893923-42d28e5677af?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1472&q=80");
+}  
+
 .app-window {
     display: flex;
+    color: white;
     width: 60%;
     height: 60%;
     flex-wrap: wrap;
-    background-color: white;
+    background-color: rgba(0, 0, 0, 0.8);
     border-radius: 10px;
     flex: 1 1 1;
+    border: 10px rgb(0, 0, 0) solid;
+    box-shadow: 5px 10px 10px rgb(20, 20, 20);
 }
 
 .title {
@@ -34,11 +39,24 @@ body {
 
 .search-bar {
     width: 60%;
+    height: 20%;
+    min-height: 30px;
+    min-width: 60%;
+    border-radius: 10px;
+    background-color: white;
+    opacity: initial;
+    font-size: 1.5rem;
+    padding: 5px;
 }
 
 button#search {
-    width: 40px;
-    height: 20px;
+    width: 30px;
+    min-width: 30px;
+    max-width: 30px;
+    height: 30px;
+    min-height: 20%;
+    border-radius: 15px;
+    margin-left: 10px;
 }
 
 .results-left {
@@ -70,6 +88,6 @@ button#search {
     height: 40%;
 }
 
-.weather {
+img.weather {
     height: 40%;
 }
